@@ -1,0 +1,312 @@
+@font-face {
+  font-family: 'Caviar';
+  src: url('../fonts/CaviarDreams.ttf') format('truetype'),
+       url('../fonts/CaviarDreams.woff') format('woff'),
+       url('../fonts/CaviarDreams.woff2') format('woff2'),
+       url('../fonts/CaviarDreams.eot') format('embeded-opentype'),
+       url('../fonts/CaviarDreams.svg') format('svg');
+}
+@font-face {
+  font-family: 'quick';
+  src:  url('../fonts/QuicksandBold.otf') format('opentype'),
+        url('../fonts/QuicksandBold.woff') format('woff'),
+        url('../fonts/QuicksandBold.woff2') format('woff2'),
+        url('../fonts/QuicksandBold.eot') format('embeded-opentype'),
+        url('../fonts/QuicksandBold.svg') format('svg');
+}
+@font-face {
+  font-family: 'Lato';
+  src:  url('../fonts/Lato-Regular.otf') format('opentype'),
+        url('../fonts/Lato-Regular.woff') format('woff'),
+        url('../fonts/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato-Regular.svg') format('svg');
+}
+
+/*------ End Bagian Font      -------------*/
+
+/*------ Start Bagian Header  -------------*/
+
+.navbar{
+  width: 100%;
+  height: 40px;
+  background-color: white !important;
+  color: black;
+  border-radius: 2px;
+  border-bottom :1px solid rgb(230, 230, 230);
+}
+.navbar-status{
+  float: right;
+  font-size: 16px;
+  width: auto;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+.navbar-menu{
+  float: right;
+  width: auto;
+  height: 100%;
+  padding: 25px 10px 20px 10px
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.navbar-menu a{
+  padding: 10px 8px 10px 8px;
+  margin-right: 5px;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  font-size: 24px;
+  color: white;
+  transition: 0.5s;
+}
+.navbar-menu a:hover{
+  border-bottom: 3px solid black
+  transition: 0.5s;
+  background-color: white;
+  color: black;
+}
+
+.navbar-merk{
+  font-size: 30px;
+  font-weight: bold;
+  padding-top:23px;
+  padding-left:20px;
+  font-family: 'Caviar'
+}
+.navbar-list-status{
+  display: none;
+  z-index: 1;
+  background-color: transparent;
+  height: auto;
+  position: absolute;
+  padding-left: 25px;
+  padding-top: 20px;
+}
+.navbar-list-status a{
+  padding:5px 24px 5px 0px;
+  display: inline-block;
+  font-size: 12px;
+
+}
+.navbar-status:hover .navbar-list-status, .navbar-list-status:hover{
+  display: block;
+}
+.navbar-status:hover .muter{
+  transform: rotate(180deg);
+  transition: 0.5s
+}
+
+/*------ End Bagian Header    -------------*/
+
+/*------ Start Bagian Menubar -------------*/
+
+.sidebar{
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background-color: transparent !important;
+}
+.sidebar-dropdown{
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  height: auto;
+}
+.sidebar-content{
+  display: none;
+  background-color: inherit;
+  width:100%;
+  margin-left: 20px;
+  padding: 12px 16px;
+  z-index: -1;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: 1s;
+  border-left: 1px solid #babdbc;
+}
+.sidebar-dropdown:hover .sidebar-content{
+  display: block;
+  transform: translateX(0px);
+  z-index: 1;
+  opacity: 1;
+}
+.sidebar-dropdown:hover .muter{
+  transform: rotate(180deg);
+  transition: 0.5s
+}
+.muter{
+  transform: rotate(0deg);
+  transition: 0.5s;
+}
+.heading{
+  background-color: transparent !important;
+}
+
+.notif{
+  margin-top: 6px;
+  margin-bottom: 10px;
+  margin-left:30px;
+  width: 95%;
+  heigth: 30px;
+  border: 1px solid black;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 5px 0px 5px 10px;
+}
+.sidebar-status{
+
+}
+.sidebar-menu{
+  padding: 10px
+}
+.sidebar-menu a, .sidebar-menu button, .sidebar-menu span{
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+.sidebar-menu button{
+  background-color: inherit;
+  text-align: left;
+  border: none;
+  color:inherit;
+  padding-left: 0;
+}
+
+
+/*------ End Bagian Menubar   -------------*/
+
+/*------ Start Bagian Animasi -------------*/
+
+
+/*------ End Bagian Animasi   -------------*/
+
+/*------ Start Bagian Footer  -------------*/
+.footer-text{
+  font-size: 10px;
+  text-align: center;
+  font-family: 'Caviar';
+  background-color: transparent !important;
+
+}
+
+/*------ End Bagian Footer    -------------*/
+
+/*------ Start Bagian Content -------------*/
+.content{
+
+  width: 80%;
+  float: right;
+  min-height: 570px;
+
+}
+.heading{
+  border-radius: 3px;
+  width: 100%;
+  height: 170px;
+  font-size: 15px;
+}
+.list{
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  height: 350px;
+  overflow-y: scroll;
+  border-right: none !important;
+}
+/*------ End Bagian Content   -------------*/
+
+/*------ Start Color List     -------------*/
+
+.smooth-red{
+  background-color: #fe3e3e !important;
+  color: #f3f3f3 ;
+}
+.smooth-blue{
+  background-color: #4f53f7;
+  color: #ffffff;
+}
+.smooth-green{
+  background-color: #15ae3e;
+  color: #ffffff;
+}
+.smooth-aqua{
+  background-color: #479ca4;
+  color: #ffffff;
+}
+.smooth-grey{
+  background-color: #4d4d4d;
+  color : #cdcdcd;
+}
+.white{
+  background-color: #f5f5f5;
+  color: #5e5e5e;
+}
+/*------ End Color List       -------------*/
+
+/*------ Start Other Section  -------------*/
+
+#container{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body{
+  margin: 0;
+  padding: 0px 10px 0px 10px;
+  font-family: 'Lato','Caviar','quick';
+
+}
+.row{
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+
+}
+button{
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+}
+mute
+/*------ End Other Section    -------------*/
+
+/*------ Start key animasi -------------*/
+@keyframes opac{
+  from{
+    opacity:0
+    } to
+    {
+      opacity:1
+      }
+    }
+@keyframes kiri{
+  from{
+    left:-250px;
+    opacity: 0;
+  }to{
+    left: 0;
+    opacity: 1;
+  }
+}
+@@keyframes bawah{
+  from{
+    opacity: 0;
+  }to{
+    opacity: 1;
+  }
+
+}
+@@keyframes turun{
+  from{
+    top:-90px;
+  }to{
+    top:0px;
+  }
+
+}
+
+/*------ end key animasi -------------*/
